@@ -68,7 +68,7 @@ class TicTacToe:
         # Check diagonals
         # But only if the square is an even number (0, 2 , 4, 6, 8)
         # Since these are the only possible move to win as an diagonal
-        if square % 2:
+        if square % 2 == 0:
             # Top left to bottom right diagonal line
             diagonal1 = [self.board[i] for i in [0, 4, 8]]
             if all([spot == letter for spot in diagonal1]):
